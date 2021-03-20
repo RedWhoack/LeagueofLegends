@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/personajesFragment">
+
+    <fragment
+        android:id="@+id/personajesFragment"
+        android:name="edu.itesm.leagueoflegends.PersonajesFragment"
+        android:label="fragment_personajes"
+        tools:layout="@layout/fragment_personajes" >
+        <action
+            android:id="@+id/action_personajesFragment_to_infoFragment"
+            app:destination="@id/infoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="edu.itesm.leagueoflegends.InfoFragment"
+        android:label="InfoFragment" >
+        <argument
+            android:name="campeon"
+            app:argType="edu.itesm.leagueoflegends.personajes" />
+    </fragment>
+</navigation>

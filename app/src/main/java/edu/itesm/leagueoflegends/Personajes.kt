@@ -7,5 +7,4 @@ import kotlinx.android.parcel.Parcelize
 data class personajes(val imagen:Int,
                  val nombre:String,
                  val informacion:String,
-                 val rol:String,
                  val secreto:String) : Parcelable

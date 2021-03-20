@@ -7,10 +7,12 @@
     tools:context=".MainActivity">
 
     <fragment
-        android:id="@+id/fragment2"
-        android:name="edu.itesm.leagueoflegends.PersonajesFragment"
+        android:id="@+id/fragment3"
+        android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="118dp"
-        tools:layout_editor_absoluteY="271dp" />
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/navigation"
+        tools:layout_editor_absoluteX="127dp"
+        tools:layout_editor_absoluteY="214dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
